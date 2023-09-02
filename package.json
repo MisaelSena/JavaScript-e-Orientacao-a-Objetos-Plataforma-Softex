@@ -1,11 +1,14 @@
 {
   "name": "javascript-e-orientacao-a-objetos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exercícios Javascript da Plataforma SOFTEX  do curso de Backend",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Misael Sena",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }

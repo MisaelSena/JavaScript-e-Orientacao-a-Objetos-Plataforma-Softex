@@ -1,0 +1,47 @@
+Luiza é desenvolvedora e está trabalhando com dois arrays. O primeiro é
+[23, 9, 4, 45] e o segundo é [7, 12]. Ela precisa dividir o primeiro em dois
+arrays e cada array gerado deve ser concatenado com o segundo
+array.
+
+  
+1.Qual é o pacote que Luiza precisa utilizar?
+
+Resposta: lodash
+  
+2.Se for preciso instalar esse pacote, qual é o comando que deve ser
+utilizado?
+
+Resposta: npm install lodash
+  
+3.Qual é o comando para importar esse pacote?
+
+Resposta: const _ = require('lodash');
+
+4.Quais as funções utilizadas neste pacote?
+
+Resposta: chunk e concat.
+
+5.Quais serão os arrays resultantes dessa operação?
+
+Código:
+
+const _ = require('lodash');
+
+const primeiroArray = [23, 9, 4, 45];
+const segundoArray = [7, 12];
+
+const metades = _.chunk(primeiroArray, Math.ceil(primeiroArray.length / 2));
+const resultado1 = _.concat(metades[0], segundoArray);
+const resultado2 = _.concat(metades[1], segundoArray);
+
+console.log(resultado1);
+console.log(resultado2);
+
+Resposta:     
+resultado1: [23, 9, 7, 12]
+resultado2: [4, 45, 7, 12]
+
+
+    
+  
+
